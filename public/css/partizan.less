@@ -1,0 +1,284 @@
+.container-fluid{
+	font-family: "Oswald";
+	font-weight: bold;
+}
+
+.navigation{
+	font-size: 20px;
+	a{
+		text-decoration: none; color: grey; float: left; padding: 8px 18px 8px 18px;
+	}
+	a:hover{
+		color: white;
+	}
+
+	.active-link{
+		color: white;
+	}
+}
+
+.top-nav{
+	max-height: 40px;
+	a{
+		color: grey;
+		text-decoration: none;
+	}
+	a:hover{
+		color: white;
+		.underline{
+			border-bottom: 3px solid white;
+		}
+	}
+}
+
+.match-info{
+	font-family: "Oswald";
+	height: 275px;
+	background-color: black;
+	color: grey;
+
+	.match-line{
+		justify-content: center;
+		font-size: 32px;
+		img{
+			width: 80px;
+			height: 80px;
+		}
+	}
+
+	a{
+		font-weight: regular;
+		font-size: 14px;
+		letter-spacing: 1px;
+		display: block;
+		border: 1px solid white;
+		padding: 5px 15px 5px 15px;
+		color: white;
+		text-decoration: none;
+	}
+
+	a:hover{
+		background-color: white;
+		color: black;
+	}
+
+	.result{
+		font-size: 42px;
+		color: white;
+		padding-left: 40px;
+	}
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    a:hover{
+		color: white;
+    }
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 46px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 8px 18px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: white; background-color: black;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: none;
+} 
+
+.news-main{
+	height: 550px;
+	overflow: hidden;
+	text-align: center;
+	width: 100%;
+	background-color: black;
+
+	a:hover{
+		img{
+			opacity: 0.5;
+			-moz-transform: scale(1.2);
+			-webkit-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+	}
+
+	h3{
+		position: absolute;
+		color: white;
+		top: 85%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	img{
+		width: 100%;
+		margin-left: -15px;
+		-moz-transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		transition: all 0.5s;
+	}
+}
+
+.news-main-small{
+	width: 950px;
+	height: 275px;
+	overflow: hidden;
+	background-color: black;
+	img{
+		display: block;
+		max-width: 110%;
+    	height: auto;
+		margin-left: -15px;
+		-moz-transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		transition: all 0.5s;
+	}
+	a:hover{
+		img{
+			opacity: 0.5;
+			-moz-transform: scale(1.2);
+			-webkit-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+	}
+
+	h3{
+		color: white;
+		text-align: center;
+	}
+}
+
+.block-content{
+	height: 450px;
+	padding-top: 30px;
+	a{
+		color: grey;
+	}
+	a:hover{
+		text-decoration: none;
+		color: black;
+	}
+
+	.one-news{
+		font-family: "Oswald";
+		.item{
+			position: relative;
+			margin: 2%;
+			height: 160px;
+			overflow: hidden;
+			img{
+				display: block;
+				-moz-transition: all 0.5s;
+	  			-webkit-transition: all 0.5s;
+	  			transition: all 0.5s;
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		a{
+			text-decoration: none;
+			color: grey;
+		}
+
+		a:hover{
+			color: black;
+			img{
+				-moz-transform: scale(1.1);
+			  	-webkit-transform: scale(1.1);
+			  	transform: scale(1.1);
+			}
+		}
+
+		h5{
+			padding-left: 5px;
+			font-size: 18px;
+		}
+
+		p{
+			padding-top: 10px;
+			font-size: 12px;
+			padding-left: 5px;
+		}
+	}
+
+	.next-match{
+		justify-content: center;
+		font-size: 32px;
+
+		img{
+			width: 130px;
+			height: 130px;
+		}	
+	}
+}
+
+.one-news{
+	font-family: "Roboto";
+	font-weight: normal;
+	text-align: justify;
+}
+
+#match-row{
+	font-family: 'Roboto';
+	font-weight: 200;
+	font-size: 16px;
+	color: #a6a6a6;
+	a{
+		color: black;
+		border-bottom: 2px solid #ffa31a;
+	}
+	a:hover{
+		opacity: 0.6;
+		text-decoration: none;
+	}
+	#result{
+		color: black;
+		height: 110%;
+		background-color: #e6e6e6;
+	}
+}
+
+.table_style{
+	line-height: 12px;
+	min-height: 12px;
+	height: 12px;
+	text-align: center;
+}
+
+.pos-po-back-blue{
+	background: #0066ff;
+}
+
+.pos-po-back-green{
+	background: #00e600;
+}
+
+.pos-r-back-green{
+	background: #00e600;
+}
